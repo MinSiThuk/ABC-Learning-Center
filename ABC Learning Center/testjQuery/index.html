@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <titl>
+
+        </titl>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>jQuery</h1>
+        <p>Hello</p>
+        <div id="clickme">
+            Click here
+          </div>
+          <img id="book" src="rose.jpg" alt="" width="100" height="123"
+            style="position: relative; left: 10px;">
+            <br><br>
+        <button id="hd">Hide</button>
+    <button id="sw">Show</button>
+     <script>
+    $("#hd").click(function(){
+    $("p").hide();
+    });
+    $("#sw").click(function(){
+    $("p").show();
+    });
+    $( "#clickme" ).click(function() {
+  $( "#book" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+  });
+});
+        </script>
+    </body>
+</html>
